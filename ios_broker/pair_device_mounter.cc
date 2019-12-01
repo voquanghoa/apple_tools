@@ -4,18 +4,20 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
-#include <getopt.h>
+#include "libimobiledevice/getopt.h"
 #include <cerrno>
-#include <libgen.h>
+#include "libimobiledevice/libgen.h"
 #include <time.h>
 #include <inttypes.h>
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
 #include <libimobiledevice/afc.h>
 #include <libimobiledevice/notification_proxy.h>
-#include <asprintf.h>
+#include "asprintf/asprintf.h"
 #include <libimobiledevice/mobile_image_mounter.h>
-#include <libimobiledevice/libimobiledevice/common/utils.h>
+#include "libimobiledevice/libusbmuxd/utils.h"
+#include "libimobiledevice/usbmuxd_mod/utils.h"
+#include "common/utils.h"
 #include "ABI/thirdparty/glog/logging.h"
 
 static const char PKG_PATH[] = "PublicStaging";

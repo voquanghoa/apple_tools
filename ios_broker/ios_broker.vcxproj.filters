@@ -43,11 +43,11 @@
     <Filter Include="ios_broker">
       <UniqueIdentifier>{2209e65b-e526-444a-bca1-f4bf4e0b52e8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ABI\thirdparty\libimobiledevice">
-      <UniqueIdentifier>{023e4856-a022-4d3f-887e-39fcd8de0a91}</UniqueIdentifier>
+    <Filter Include="ABI\asprintf">
+      <UniqueIdentifier>{5f1d961d-4289-424a-ac5a-0922749d7121}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ABI\thirdparty\libimobiledevice\common">
-      <UniqueIdentifier>{9cbbb783-cbd2-41ad-8600-b96f43aefd33}</UniqueIdentifier>
+    <Filter Include="ios_broker\common">
+      <UniqueIdentifier>{dec8a46f-b025-4b1e-8a38-687a89a4d802}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -141,8 +141,26 @@
     <ClCompile Include="pair_downloae_done_plist.cc">
       <Filter>ios_broker</Filter>
     </ClCompile>
-    <ClCompile Include="..\ABI\thirdparty\libimobiledevice\libimobiledevice\common\utils.c">
-      <Filter>ABI\thirdparty\libimobiledevice\common</Filter>
+    <ClCompile Include="..\ABI\asprintf\asprintf.c">
+      <Filter>ABI\asprintf</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.c">
+      <Filter>ios_broker</Filter>
+    </ClCompile>
+    <ClCompile Include="common\userpref.c">
+      <Filter>ios_broker\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils.c">
+      <Filter>ios_broker\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\debug.c">
+      <Filter>ios_broker\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\socket.c">
+      <Filter>ios_broker\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\thread.c">
+      <Filter>ios_broker\common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -248,8 +266,26 @@
     <ClInclude Include="pair_downloae_done_plist.h">
       <Filter>ios_broker</Filter>
     </ClInclude>
-    <ClInclude Include="..\ABI\thirdparty\libimobiledevice\libimobiledevice\common\utils.h">
-      <Filter>ABI\thirdparty\libimobiledevice\common</Filter>
+    <ClInclude Include="..\ABI\asprintf\asprintf.h">
+      <Filter>ABI\asprintf</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>ios_broker</Filter>
+    </ClInclude>
+    <ClInclude Include="common\thread.h">
+      <Filter>ios_broker\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\userpref.h">
+      <Filter>ios_broker\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils.h">
+      <Filter>ios_broker\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\debug.h">
+      <Filter>ios_broker\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\socket.h">
+      <Filter>ios_broker\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

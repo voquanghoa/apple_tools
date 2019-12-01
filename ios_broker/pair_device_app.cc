@@ -41,13 +41,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
-#include <getopt.h>
+#include <libimobiledevice/getopt.h>
 #include <errno.h>
 #include <time.h>
-#include <libgen.h>
+#include <libimobiledevice/libgen.h>
 #include <inttypes.h>
 #include <limits.h>
-#include <dirent.h>
+#include <libimobiledevice/dirent.h>
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
 #include <libimobiledevice/installation_proxy.h>
@@ -67,7 +67,7 @@
 # define strdup _strdup
 #endif
 
-#include <asprintf.h>
+#include <asprintf/asprintf.h>
 
 #ifndef PRIu64
 # define PRIu64 "llu"
